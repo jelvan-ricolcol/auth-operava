@@ -90,7 +90,7 @@ The application currently bypasses heavy SQL infrastructure in favor of a local 
 The server enforces rigorous enterprise security measures directly at the network layer:
 - **Strict Content-Security-Policy (CSP)**: Locks down cross-site scripting (XSS) vectors while preserving internal operations and sandbox boundaries.
 - **In-Memory Rate Limiting**: Tracks failed authentication attempts (`loginFailures`) to mitigate and block targeted brute-force and dictionary attacks.
-- **Session Verification**: Backend endpoints actively validate ****** against the internal session registry.
+- **Session Verification**: Backend endpoints actively validate session tokens against the internal session registry.
 
 ### 3. API Endpoint Mappings
 The server coordinates the following critical internal paths:
